@@ -8,29 +8,40 @@ def get_file_creation_time(path):
     stat = os.stat(path)
     return datetime.fromtimestamp(stat.st_ctime)
 
+def clean_title(title):
+    title = title.replace("`", "")
+    title = re.sub(r"[^\w\u4e00-\u9fff\s-]", "", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
+
 def extract_title(content, filename):
     for line in content.splitlines():
         if line.strip().startswith("# "):
-            return line.strip()[2:].strip()
-    # 如果没有标题，用文件名
-    return os.path.splitext(os.path.basename(filename))[0]
+            raw_title = line.strip()[2:].strip()
+            return clean_title(raw_title)
 
-def already_has_front_matter(content):
-    return content.strip().startswith("---")
+    name = os.path.splitext(os.path.basename(filename))[0]
+    return clean_title(name)
+
+def remove_existing_front_matter(content):
+    if content.lstrip().startswith("---"):
+        parts = content.split("---", 2)
+        if len(parts) >= 3:
+            return parts[2].lstrip()
+    return content
 
 def process_markdown(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    if already_has_front_matter(content):
-        print(f"跳过（已有front-matter）: {file_path}")
-        return
+    # 🔥 先删除旧的 front-matter
+    content = remove_existing_front_matter(content)
 
     title = extract_title(content, file_path)
     date = get_file_creation_time(file_path).strftime("%Y-%m-%d %H:%M:%S")
 
     front_matter = f"""---
-title: {title}
+title: "{title}"
 date: {date}
 tags:
   - Python
@@ -45,7 +56,7 @@ categories:
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(new_content)
 
-    print(f"已修复: {file_path}")
+    print(f"已重建: {file_path}")
 
 def main():
     for root, dirs, files in os.walk(ROOT_DIR):
