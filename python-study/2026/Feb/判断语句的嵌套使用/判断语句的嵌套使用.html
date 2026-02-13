@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>O1Oのブログ</title>
+  <meta name="author" content="ttu-neko">
+  
+  <meta name="description" content="远方就是这样，是我站立的地方。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="O1Oのブログ"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="O1Oのブログ" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">O1Oのブログ</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+	
+		<div class="page-header">
+			<h1> </h1>
+		</div>
+	
+
+
+
+<div class="row page">
+	<!-- cols -->
+	
+	<div class="col-md-12"> 
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="判断语句的嵌套使用"><a href="#判断语句的嵌套使用" class="headerlink" title="判断语句的嵌套使用"></a>判断语句的嵌套使用</h1><!-- TOC -->
+<ul>
+<li><a href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%B5%8C%E5%A5%97%E4%BD%BF%E7%94%A8">判断语句的嵌套使用</a><ul>
+<li><a href="#%E8%AF%AD%E6%B3%95%E6%A0%BC%E5%BC%8F">语法格式</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+
+<p>有很多场景，不仅仅是多个并列条件，还会有满足前置条件才会二次判断的多层判断需求。</p>
+<p><img src="/./image/PixPin_2026-02-03_19-01-39.png" alt="嵌套示例"></p>
+<blockquote>
+<p>许多逻辑的判断，是嵌套的，多层次的。</p>
+<p>对于这种需求，我们可以：自由组合ifelifelse，完成特定需求的要求</p>
+</blockquote>
+<h2 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> &lt;条件<span class="number">1</span>&gt;：</span><br><span class="line"></span><br><span class="line">&lt;满足条件<span class="number">1</span>做的事情<span class="number">1</span>&gt;</span><br><span class="line">&lt;满足条件<span class="number">1</span>做的事情<span class="number">2</span>&gt;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> &lt;条件<span class="number">2</span>&gt;：</span><br><span class="line"></span><br><span class="line">    &lt;满足条件<span class="number">2</span>做的事情<span class="number">1</span>&gt;</span><br><span class="line">    &lt;满足条件<span class="number">2</span>做的事情<span class="number">2</span>&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如上图，第二个if，属于第一个if内，只有第一个if满足条件，才会执行第二个if</p>
+</blockquote>
+<blockquote>
+<p>[!note]<br>嵌套的关键点，在于：空格缩进</p>
+<p>通过空格缩进，来决定语句之间的：层次关系</p>
+</blockquote>
+<p><strong>示例</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 示例一</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入您的身高:&quot;</span>)) &gt;= <span class="number">120</span>:    <span class="comment"># ①</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;您的身高大于120cm,需要付费游玩&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;但是如果您的等级大于6级的话,可以免费游玩&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入您的等级:&quot;</span>)) &gt;= <span class="number">6</span>:  <span class="comment"># ②</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;您的等级大于6级,可以免费游玩&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Sorry,您需要付费游玩&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;您的身高小于120cm,可以免费游玩&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>判断有 2层<br>当外层if满足条件（编号1）时，才会执行内层if判断（编号2）<br>当外层if（编号1）不满足，直接执行外层esle</p>
+</blockquote>
+<p><strong>输出一:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">请输入您的身高:180</span><br><span class="line">您的身高大于120cm,需要付费游玩</span><br><span class="line">但是如果您的等级大于6级的话,可以免费游玩</span><br><span class="line">请输入您的等级:7</span><br><span class="line">您的等级大于6级,可以免费游玩</span><br></pre></td></tr></table></figure>
+<p><strong>输出二</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">请输入您的身高:180</span><br><span class="line">您的身高大于120cm,需要付费游玩</span><br><span class="line">但是如果您的等级大于6级的话,可以免费游玩</span><br><span class="line">请输入您的等级:2</span><br><span class="line">Sorry,您需要付费游玩</span><br></pre></td></tr></table></figure>
+<p><strong>示例二:</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 示例二</span></span><br><span class="line">age = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入您的年龄:&quot;</span>))</span><br><span class="line">time = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入你的入职时间:&quot;</span>))</span><br><span class="line">level = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入您的等级:&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> age &gt;= <span class="number">18</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;OK,您是成年人,继续判断&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> age &lt; <span class="number">30</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;您的年龄符合标准,继续判断&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> time &gt; <span class="number">2</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;您的入职时间大于2年,您可以领取礼物&quot;</span>)</span><br><span class="line">        <span class="keyword">elif</span> level &gt;= <span class="number">3</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;您的等级大于等于3级,您可以领取礼物&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;您的入职时间或等级不符合标准,不得领取礼物&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;您不符合标准,不得领取礼物&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;您是未成年人,不得领取礼物&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><del>屎山代码(dege)</del><br><strong>输出:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">请输入您的年龄:29</span><br><span class="line">输入你的入职时间:1</span><br><span class="line">请输入您的等级:4</span><br><span class="line">OK,您是成年人,继续判断</span><br><span class="line">您符合标准,继续判断</span><br><span class="line">您的等级大于等于3级,您可以领取礼物</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>if elif else 可以自由组合</p>
+<p>满足缩进的要求即可</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>嵌套判断语句可以用于多条件、多层次的逻辑判断</li>
+<li>嵌套判断语句可以根据需求，自由组合</li>
+<li>if elif else来构建多层次判断</li>
+<li>嵌套判断语句，一定要注意空格缩进，Python通过空格缩进来决定层次关系</li>
+</ul>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+
+	
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+-->
+	
+	
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2026 ttu-neko's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>O1Oのブログ</title>
+  <meta name="author" content="ttu-neko">
+  
+  <meta name="description" content="远方就是这样，是我站立的地方。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="O1Oのブログ"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="O1Oのブログ" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">O1Oのブログ</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+	
+		<div class="page-header">
+			<h1> </h1>
+		</div>
+	
+
+
+
+<div class="row page">
+	<!-- cols -->
+	
+	<div class="col-md-12"> 
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="布尔类型和比较运算符"><a href="#布尔类型和比较运算符" class="headerlink" title="布尔类型和比较运算符"></a>布尔类型和比较运算符</h1><h2 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h2><p>进行判断只有两个结果</p>
+<ul>
+<li>是(true)</li>
+<li>否(false)</li>
+</ul>
+<p>但在程序中如何表示<em>是</em>或<em>否</em>呢?<br>答: 通过bool类型</p>
+<p>bool是数字类型,因为bool的true本质上是一个数字,记作1而false记作0</p>
+<h3 id="布尔类型的定义"><a href="#布尔类型的定义" class="headerlink" title="布尔类型的定义"></a>布尔类型的定义</h3><p><strong>布尔类型的字面量:</strong></p>
+<ul>
+<li>true</li>
+<li>false</li>
+</ul>
+<p><strong>布尔类型定义语句:</strong><br><code>&lt;变量名&gt; = &lt;布尔类型字面量&gt;</code></p>
+<blockquote>
+<p>布尔类型不仅可以自行定义,同时也可以通过计算的来。</p>
+<p>也就是使用比较运算符进行比较运算得到布尔类型的结果。</p>
+</blockquote>
+<p><strong>示例:</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义bool类型变量</span></span><br><span class="line">isAlive = <span class="literal">True</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;isAlive的值是<span class="subst">&#123;isAlive&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>输出:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">isAlive的值是True</span><br></pre></td></tr></table></figure>
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><blockquote>
+<p>布尔类型的数据，不仅可以通过定义得到，也可以通过比较运算符进行内容比较得到。</p>
+</blockquote>
+<p><strong>示例:</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bool类型变量参与比较运算</span></span><br><span class="line">result1 = <span class="number">5</span> &gt; <span class="number">3</span>  <span class="comment"># True</span></span><br><span class="line">result2 = <span class="string">&quot;baka&quot;</span> == <span class="string">&quot;baka&quot;</span>  <span class="comment"># True</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;5 &gt; 3的结果是<span class="subst">&#123;result1&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result1)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;2 == 4的结果是<span class="subst">&#123;result2&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result2)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>输出:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 &gt; 3的结果是True,类型是&lt;class &#x27;bool&#x27;&gt; </span><br><span class="line">2 == 4的结果是True,类型是&lt;class &#x27;bool&#x27;&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其中 &#x3D;&#x3D; 就是所谓的比较运算符</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">描述</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>==</code></td>
+<td align="center">判断内容是否相等，满足为True，不满足为False</td>
+<td align="center">如a&#x3D;3,b&#x3D;3, 则(a &#x3D;&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="center"><code>!=</code></td>
+<td align="center">判断内容是否不相等，满足为True，不满足为False</td>
+<td align="center">如a&#x3D;1,b&#x3D;3, 则(a !&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;</code></td>
+<td align="center">判断运算符左侧内容是否大于右侧满足为True，不满足为False</td>
+<td align="center">如a&#x3D;7,b&#x3D;3, 则(a &gt;b) 为 True</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;</code></td>
+<td align="center">判断运算符左侧内容是否小于右侧满足为True，不满足为False</td>
+<td align="center">如a&#x3D;3,b&#x3D;7, 则(a &lt;b) 为 True</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;=</code></td>
+<td align="center">判断运算符左侧内容是否大于等于右侧满足为True，不满足为False</td>
+<td align="center">如a&#x3D;3,b&#x3D;3, 则(a &gt;&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;=</code></td>
+<td align="center">判断运算符左侧内容是否小于等于右侧</td>
+<td align="center">满足为True，不满足为False</td>
+</tr>
+</tbody></table>
+<p><strong>示例:</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 比较运算符的使用</span></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">20</span></span><br><span class="line">c = -<span class="number">1</span></span><br><span class="line">result3 = a &gt; b  <span class="comment"># False</span></span><br><span class="line">result4 = a &lt; c  <span class="comment"># False</span></span><br><span class="line">result5 = b &gt; c  <span class="comment"># True</span></span><br><span class="line">result6 = a &gt;= <span class="number">10</span>  <span class="comment"># True</span></span><br><span class="line">result7 = b &lt;= <span class="number">15</span>  <span class="comment"># False</span></span><br><span class="line">result8 = a != c  <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;a &gt; b的结果是<span class="subst">&#123;result3&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result3)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;a &lt; c的结果是<span class="subst">&#123;result4&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result4)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;b &gt; c的结果是<span class="subst">&#123;result5&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result5)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;a &gt;= 10的结果是<span class="subst">&#123;result6&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result6)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;b &lt;= 15的结果是<span class="subst">&#123;result7&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result7)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;a != c的结果是<span class="subst">&#123;result8&#125;</span>,类型是<span class="subst">&#123;<span class="built_in">type</span>(result8)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>输出:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a &gt; b的结果是False,类型是&lt;class &#x27;bool&#x27;&gt;</span><br><span class="line">a &lt; c的结果是False,类型是&lt;class &#x27;bool&#x27;&gt;</span><br><span class="line">b &gt; c的结果是True,类型是&lt;class &#x27;bool&#x27;&gt;</span><br><span class="line">a &gt;= 10的结果是True,类型是&lt;class &#x27;bool&#x27;&gt;</span><br><span class="line">b &lt;= 15的结果是False,类型是&lt;class &#x27;bool&#x27;&gt;</span><br><span class="line">a != c的结果是True,类型是&lt;class &#x27;bool&#x27;&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="在Python中，可以表示真假的数据类型是"><a href="#在Python中，可以表示真假的数据类型是" class="headerlink" title="在Python中，可以表示真假的数据类型是:"></a>在Python中，可以表示真假的数据类型是:</h3><p>布尔类型，字面量True表示真，字面量False表示假</p>
+<h3 id="除了可以定义布尔类型外，还可以通过什么计算得到布尔类型"><a href="#除了可以定义布尔类型外，还可以通过什么计算得到布尔类型" class="headerlink" title="除了可以定义布尔类型外，还可以通过什么计算得到布尔类型?"></a>除了可以定义布尔类型外，还可以通过什么计算得到布尔类型?</h3><p>通过&lt;比较运算符&gt;计算得到布尔类型的结果</p>
+<ul>
+<li><code>==</code> 判断是否相等，！&#x3D;判断是否不相等</li>
+<li><code>&gt;</code>判断是否大于,<code>&lt;</code>判断是否小于</li>
+<li><code>&gt;=</code>判断是否大于等于,<code>&lt;=</code>判断是否小于等于</li>
+</ul>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+
+	
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+-->
+	
+	
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2026 ttu-neko's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>

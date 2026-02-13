@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>O1Oのブログ</title>
+  <meta name="author" content="ttu-neko">
+  
+  <meta name="description" content="远方就是这样，是我站立的地方。">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="O1Oのブログ"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="O1Oのブログ" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/prism.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70812759-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70812759-1');
+</script>
+
+
+
+
+
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">O1Oのブログ</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+	
+		<div class="page-header">
+			<h1> </h1>
+		</div>
+	
+
+
+
+<div class="row page">
+	<!-- cols -->
+	
+	<div class="col-md-12"> 
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h1><p>数据类型之间，在特定的场景下，是可以相互转换的，如字符串转数字、数字转字符串等</p>
+<h2 id="为什么要转换数据类型"><a href="#为什么要转换数据类型" class="headerlink" title="为什么要转换数据类型"></a>为什么要转换数据类型</h2><p>数据类型转换，将会是我们以后经常使用的功能.</p>
+<ul>
+<li>从文件中读取的数字，默认是字符串，我们需要转换成数字类型</li>
+<li>后续学习的input()语句，默认结果是字符串，若需要数字也需要转换·将数字转换成字符串用以写出到外部系统</li>
+</ul>
+<h2 id="常见的转换语句"><a href="#常见的转换语句" class="headerlink" title="常见的转换语句"></a>常见的转换语句</h2><table>
+<thead>
+<tr>
+<th align="center">语句</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>int()</code></td>
+<td align="center">转换为int类型</td>
+</tr>
+<tr>
+<td align="center"><code>float()</code></td>
+<td align="center">转换为float类型</td>
+</tr>
+<tr>
+<td align="center"><code>str()</code></td>
+<td align="center">转换为string类型</td>
+</tr>
+</tbody></table>
+<p>同前面学习的<code>type()</code>语句一样，这三个语句，都是带有结果的（返回值）我们可以用<code>print()</code>直接输出或用变量存储结果值</p>
+<blockquote>
+<p>[!note]<br>任何类型都可以转换成string类型,但是string类型转换成其他类型要满足该类型的条件,比如string转int要求string类型的变量只有数字</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="任何类型是不是都可以转化成string类型"><a href="#任何类型是不是都可以转化成string类型" class="headerlink" title="任何类型是不是都可以转化成string类型"></a>任何类型是不是都可以转化成string类型</h3><p>YES</p>
+<h3 id="string类型是否可以随意转换成int或float类型"><a href="#string类型是否可以随意转换成int或float类型" class="headerlink" title="string类型是否可以随意转换成int或float类型"></a>string类型是否可以随意转换成int或float类型</h3><p>NO,字符串内必须只有数字才可以</p>
+<h3 id="浮点数转小数会丢失什么"><a href="#浮点数转小数会丢失什么" class="headerlink" title="浮点数转小数会丢失什么"></a>浮点数转小数会丢失什么</h3><p>丢失精度,也就是小数部分</p>
+
+	  <div class="article-footer-copyright">
+
+    本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
+</div>
+
+	</div>
+
+	
+	
+	<div>
+  	<center>
+
+	<div class="pagination">
+
+    
+</div>
+
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--
+-->
+	
+	
+	
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+		
+
+</div><!-- row -->
+
+<!--
+ -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  
+  &copy; 2026 ttu-neko's Blog
+  
+      powered by <a href="http://hexo.io/" target="_blank">Hexo</a>.Theme <a href="https://github.com/Ares-X/hexo-theme-freemind.bithack" target="_blank">freemind.bithack</a>  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+</body>
+   </html>
